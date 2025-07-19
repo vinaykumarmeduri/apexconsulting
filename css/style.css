@@ -165,6 +165,9 @@ font-family: 'Oswald', sans-serif;
   .hero-heading-overlay {
     padding: 10px 20px;
   }
+.hero {
+    height: 70vh;
+  }
 
   .hero-line {
     font-size: 2rem;
@@ -1054,3 +1057,4 @@ footer {
   padding: 20px 0;
   margin-top: 40px;
 }
+
