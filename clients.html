@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Clients | Apex Consulting</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    
+
+    /* Banner */
+    .clients-banner {
+      background: url('images/clients-banner.png') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      padding-left: 60px;
+      margin-top: 0px;
+      color: #fff;
+    }
+
+    .clients-banner h1 {
+      font-size: 48px;
+      line-height: 1.2;
+    }
+
+    .clients-banner .italic {
+      font-style: italic;
+      font-weight: 400;
+      display: block;
+     
+    }
+
+    .clients-banner strong {
+      font-weight: 800;
+      font-size: 60px;
+      display: block;
+      
+    }
+
+    .clients-intro {
+      max-width: 1000px;
+      margin: 40px auto 20px;
+      padding: 0 20px;
+      font-size: 18px;
+      color: #444;
+      text-align: center;
+    }
+
+    .trusted-text {
+      text-align: center;
+      font-size: 18px;
+      color: #666;
+      margin-top: 60px;
+      margin-bottom: 10px;
+    }
+
+    /* Scrolling Cards */
+.scroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+}
+
+.auto-scroll {
+  display: flex;
+  animation: scrollClients 30s linear infinite;
+  width: max-content;
+}
+
+@keyframes scrollClients {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+    .scrolling-clients {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 20px 10px;
+      background: #fff;
+    }
+
+    .scroll-client-card {
+      display: inline-block;
+      background: #fff;
+      border-radius: 10px;
+      width: 180px;
+      margin: 0 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .scroll-client-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .scroll-client-card h4 {
+      font-size: 15px;
+      color: #333;
+      margin: 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 26px;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .more-clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .more-client-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .more-client-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .more-client-card h4 {
+      font-size: 15px;
+      color: #222;
+      margin: 10px 0 5px;
+    }
+
+    .more-client-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+   <header>
+    <div class="header-container">
+      <nav class="nav-center">
+	<a href="index.html" class="logo-text-link">
+          <img src="images/logo.png" alt="Apex Logo" />
+          <span class="logo-text"><strong>CONSULTING</strong></span>
+        </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" >Services</a>
+
+        
+
+        <a href="clients.html" class="active">Clients</a>
+      
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+</header>
+
+  <!-- Banner -->
+  <section class="clients-banner">
+    <div>
+      <h1>
+        <span class="italic">Our</span>
+        <strong>Clients</strong>
+      </h1>
+    </div>
+  </section>
+
+  <!-- Intro Paragraph -->
+  <div class="clients-intro">
+    <p>
+      We are proud to be trusted by a wide range of clients across industries. At Apex Consulting, we partner with organizations to solve hiring challenges and accelerate growth through personalized recruitment and talent services.
+    </p>
+  </div>
+
+  <!-- Trusted By -->
+  <div class="trusted-text">Trusted by our partners</div>
+
+  <!-- Auto-Scrolling Clients Section -->
+<div class="scroll-wrapper">
+  <div class="scrolling-clients auto-scroll">
+    <div class="scroll-client-card">
+      <img src="images/client1.jpg" alt="BuildTech" />
+      <h4>BuildTech</h4>
+    </div>
+    <div class="scroll-client-card">
+      <img src="images/client2.png" alt="Mass Group" />
+      <h4>Mass Group</h4>
+    </div>
+    <div class="scroll-client-card">
+      <img src="images/client3.png" alt="IdeaMagix" />
+      <h4>IdeaMagix</h4>
+    </div>
+    <div class="scroll-client-card">
+      <img src="images/kan_infocom.jpg" alt="Kan Infocom" />
+      <h4>Kan Infocom</h4>
+    </div>
+    <div class="scroll-client-card">
+      <img src="images/qualitykiosk.png" alt="QualityKiosk" />
+      <h4>QualityKiosk</h4>
+    </div>
+
+    <!-- Duplicate for seamless scroll effect -->
+    <div class="scroll-client-card">
+      <img src="images/client1.jpg" alt="BuildTech" />
+      <h4>BuildTech</h4>
+    </div>
+    <div class="scroll-client-card">
+      <img src="images/client2.png" alt="Mass Group" />
+      <h4>Mass Group</h4>
+    </div>
+    <div class="scroll-client-card">
+      <img src="images/client3.png" alt="IdeaMagix" />
+      <h4>IdeaMagix</h4>
+    </div>
+    <div class="scroll-client-card">
+      <img src="images/kan_infocom.jpg" alt="Kan Infocom" />
+      <h4>Kan Infocom</h4>
+    </div>
+    <div class="scroll-client-card">
+      <img src="images/qualitykiosk.png" alt="QualityKiosk" />
+      <h4>QualityKiosk</h4>
+    </div>
+  </div>
+</div>
+
+
+  <!-- More Clients -->
+  <h2 class="section-title">More Clients</h2>
+  <div class="more-clients-grid">
+
+    <!-- Repeat all clients here -->
+    <div class="more-client-card">
+      <img src="images/client1.jpg" alt="BuildTech" />
+      <h4>BuildTech</h4>
+      <p>Helped with IT infrastructure and mid-level tech recruitment.</p>
+    </div>
+
+    <div class="more-client-card">
+      <img src="images/client2.png" alt="Mass Group" />
+      <h4>Mass Group</h4>
+      <p>Assisted in strategic hiring for expansion across cities.</p>
+    </div>
+
+    <div class="more-client-card">
+      <img src="images/client3.png" alt="IdeaMagix" />
+      <h4>IdeaMagix</h4>
+      <p>Delivered full-stack developer and creative UI/UX candidates.</p>
+    </div>
+
+    <div class="more-client-card">
+      <img src="images/kan_infocom.jpg" alt="Kan Infocom" />
+      <h4>Kan Infocom</h4>
+      <p>Placed tech support and development staff across verticals.</p>
+    </div>
+
+    <div class="more-client-card">
+      <img src="images/qualitykiosk.png" alt="QualityKiosk" />
+      <h4>QualityKiosk</h4>
+      <p>Assisted with QA & automation testing resource hiring.</p>
+    </div>
+
+    <div class="more-client-card">
+      <img src="images/nabitech.png" alt="Nabitech" />
+      <h4>Nabitech Solutions</h4>
+      <p>Recruited top talent for their DevOps and backend teams.</p>
+    </div>
+
+    <div class="more-client-card">
+      <img src="images/mars.jpg" alt="Mars Enterprise" />
+      <h4>Mars Enterprise</h4>
+      <p>Supported with agile team hiring and HR advisory.</p>
+    </div>
+
+    <div class="more-client-card">
+      <img src="images/empliance.png" alt="Empliance" />
+      <h4>Empliance</h4>
+      <p>Helped hire remote workforces and project leads.</p>
+    </div>
+
+    <div class="more-client-card">
+      <img src="images/neosoft.png" alt="Neosoft" />
+      <h4>Neosoft</h4>
+      <p>Built high-performing dev teams for client-facing projects.</p>
+    </div>
+   <div class="more-client-card">
+      <img src="images/dnz.png" alt="DNZ" />
+      <h4>DNZ enterprises</h4>
+      <p>Helped hire remote workforces and project leads.</p>
+    </div>
+    <div class="more-client-card">
+      <img src="images/bpo.png" alt="BPO Clients" />
+      <h4>BPO Clients</h4>
+      <p>Placed support and customer service staff for BPO firms.</p>
+    </div>
+
+  </div>
+
+<section class="contact-section">
+  <h2>Get In Touch With Us</h2>
+  <p>We would love to hear from you!</p>
+
+  <form action="https://formsubmit.co/apexconsultingonline@gmail.com" method="POST" class="contact-form">
+  <!-- Hidden Fields -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_autoresponse" value="Thank you for contacting Apex Consulting. We will get back to you soon.">
+
+  <!-- Name -->
+  <div class="form-group">
+    <label for="name"><i class="fas fa-user"></i> Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+
+  <!-- Company Name -->
+  <div class="form-group">
+    <label for="company"><i class="fas fa-building"></i> Company Name</label>
+    <input type="text" id="company" name="company" placeholder="Your company name">
+  </div>
+
+  <!-- Email -->
+  <div class="form-group">
+    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  </div>
+
+  <!-- Phone Number -->
+  <div class="form-group">
+    <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+  </div>
+
+  <!-- Message -->
+  <div class="form-group">
+    <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" class="btn">
+    <i class="fas fa-paper-plane"></i> Send Message
+  </button>
+</form>
+
+  <div class="contact-details" style="margin-top: 30px;">
+      <p><strong><i class="fa fa-building"></i> Apex Consulting</strong></p>
+      <p>Reach Us At</p>
+     
+        <a href="https://www.linkedin.com/company/apexconsultingonline/" target="_blank" style="margin-right: 15px; font-size: 1.5rem; color: #0077b5;"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/apexconsultingonline/?utm_source=ig_web_button_share_sheet" target="_blank" style="font-size: 1.5rem; color: #E1306C;"><i class="fab fa-instagram"></i></a>
+      </div>
+</section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Apex Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
