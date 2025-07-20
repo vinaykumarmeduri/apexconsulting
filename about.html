@@ -11,24 +11,30 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="header-container">
-      <nav class="nav-center">
-       <a href="index.html" class="logo-text-link">
-          <img src="images/logo.png" alt="Apex Logo" />
-          <span class="logo-text"><strong>CONSULTING</strong></span>
-        </a>
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="services.html">Services</a>
-        
-        <a href="clients.html">Clients</a>
-        
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="navbar">
+    <!-- Logo on the left -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo" />
+      <span class="logo-text"><strong>CONSULTING</strong></span>
+    </a>
+
+    <!-- Hamburger on the right -->
+    <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Navigation links (toggle on mobile) -->
+  <nav class="nav-links" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="clients.html">Clients</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
 
   <!-- Hero Section -->
   <section class="about-banner">
@@ -187,6 +193,11 @@
         <a href="https://www.instagram.com/apexconsultingonline/?utm_source=ig_web_button_share_sheet" target="_blank" style="font-size: 1.5rem; color: #E1306C;"><i class="fab fa-instagram"></i></a>
       </div>
 </section>
+<script>
+  document.getElementById('hamburger-btn').addEventListener('click', function () {
+    document.getElementById('mobile-menu').classList.toggle('active');
+  });
+</script>
 
   <!-- Footer -->
  <footer>

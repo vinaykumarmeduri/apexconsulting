@@ -1048,6 +1048,115 @@ font-family: 'Anton', sans-serif;
   color: #007bff;
   margin-bottom: 15px;
 }
+/* Header container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Hamburger button */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+  display: none; /* hidden by default on desktop */
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 20px;
+}
+
+/* Responsive: show hamburger and hide nav links */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+/* ────────────────────────────────────────────────
+   MOBILE‑ONLY ADJUSTMENTS  ( ≤ 600 px )
+   ──────────────────────────────────────────────── */
+@media (max-width: 600px) {
+
+  /* 1️⃣  Smaller wrapper so it fits comfortably */
+  .compass-wrapper {
+    width: 260px;     /* down from 400px */
+    height: 260px;
+  }
+
+  /* 2️⃣  Smaller rotating disc inside */
+  #rotating-group {
+    width: 160px;     /* down from 200‑250px */
+    height: 160px;
+    border-width: 6px;   /* a bit thinner */
+  }
+
+  /* 3️⃣  Pointer stays centered but shorter */
+  .pointer {
+    height: 24px;
+    width: 8px;
+  }
+
+  .disk-center {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* 4️⃣  Pull the labels in and tighten text */
+  .service-label {
+    font-size: 0.8rem;   /* slightly smaller text */
+    width: 80px;
+    line-height: 1.2;
+  }
+
+  .service-label.top    { top:   -10px; }
+  .service-label.bottom { bottom:-10px; }
+
+  /* Bring side labels closer so they’re not cut off */
+  .service-label.left  { left:  -50px; }
+  .service-label.right { right: -50px; }
+
+  /* 5️⃣  Make sure nothing causes horizontal scroll */
+  html, body { overflow-x: hidden; }
+}
 
 /* Footer */
 footer {
